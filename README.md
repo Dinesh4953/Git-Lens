@@ -33,3 +33,13 @@ Most tools only show metrics like stars, commits, or languages.
 - ❌ Private repositories (GitHub API restriction)
 - ❌ Empty or ZIP-only uploads
 
+## 📽 Project Presentation (Rendered Slides)
+
+The project presentation is available as a rendered slide deck:
+
+🔗 **View Slides Online:**  
+https://docs.google.com/presentation/d/XXXXXXXX/view
+
+📥 **Download PPT:**  
+[RepoLens-AI.pptx](docs/RepoLens-AI.pptx)
+
