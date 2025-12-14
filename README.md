@@ -13,6 +13,16 @@ https://git-lens.onrender.com
 (Open the link to analyze any public GitHub repository of thi project)
 
 ---
+# 📽 Project Presentation (Rendered Slides)
+
+The project presentation is available as a rendered slide deck:
+
+🔗 **View Slides Online:**  
+https://docs.google.com/presentation/d/XXXXXXXX/view
+
+📥 **Download PPT:**  
+[RepoLens-AI.pptx](docs/RepoLens-AI.pptx)
+---
 
 ## 🧠 Why RepoLens AI?
 
@@ -33,16 +43,7 @@ Most tools only show metrics like stars, commits, or languages.
 - ❌ Private repositories (GitHub API restriction)
 - ❌ Empty or ZIP-only uploads
 
-## 📽 Project Presentation (Rendered Slides)
-
-The project presentation is available as a rendered slide deck:
-
-🔗 **View Slides Online:**  
-https://docs.google.com/presentation/d/XXXXXXXX/view
-
-📥 **Download PPT:**  
-[RepoLens-AI.pptx](docs/RepoLens-AI.pptx)
-
+#
 ## 🧪 Testing
 Tests are included using pytest and are automatically run using GitHub Actions.
 
