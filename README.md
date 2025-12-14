@@ -10,7 +10,7 @@ It gives a clear verdict, highlights critical weaknesses, and tells developers e
 👉 **Deployed Application:**  
 https://git-lens.onrender.com
 
-(Open the link to analyze any public GitHub repository)
+(Open the link to analyze any public GitHub repository of thi project)
 
 ---
 
