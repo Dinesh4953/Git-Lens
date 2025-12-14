@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RepoLens AI</title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* ===== HERO TITLE ===== */
+        .hero-title {
+            font-size: 4.2rem;
+            font-weight: 900;
+            color: #4fd1c5; /* teal/cyan accent */
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: #e2e8f0;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.8);
+        }
+
+        /* ===== BUTTON EFFECTS ===== */
+        .btn-analyze {
+            transition: all 0.3s ease;
+        }
+
+        .btn-analyze:hover {
+            background-color: #22c55e;
+            box-shadow: 0 0 25px rgba(34, 197, 94, 0.9);
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        .btn-rules {
+            transition: all 0.3s ease;
+        }
+
+        .btn-rules:hover {
+            background-color: #64748b;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(148, 163, 184, 0.6);
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+
+<!-- ================= HERO IMAGE ================= -->
+<div class="container-fluid p-0">
+    <div class="position-relative text-center">
+
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80"
+             class="img-fluid w-100"
+             alt="Developer coding">
+
+        <!-- Overlay text -->
+        <div class="position-absolute top-50 start-50 translate-middle px-3">
+            <h1 class="hero-title mb-3">RepoLens AI</h1>
+            <p class="hero-subtitle">
+                Recruiter-style GitHub Repository Evaluation
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+<div class="container py-5 text-center">
+
+    <!-- Primary CTA -->
+    <div class="mb-3">
+        <a href="/analyze"
+           class="btn btn-success btn-lg px-5 btn-analyze">
+            🚀 Analyze My Repository
+        </a>
+    </div>
+
+    <!-- Secondary CTA -->
+    <div class="mb-5">
+        <button class="btn btn-outline-light btn-rules"
+                data-bs-toggle="modal"
+                data-bs-target="#rulesModal">
+            ℹ️ How to Get a High Score
+        </button>
+    </div>
+
+</div>
+
+<!-- ================= MODAL ================= -->
+<div class="modal fade" id="rulesModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-light">
+
+            <div class="modal-header">
+                <h5 class="modal-title">📘 RepoLens Scoring Rules (15 Key Points)</h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item bg-dark text-light">✅ Public GitHub repository</li>
+                    <li class="list-group-item bg-dark text-light">✅ Clear README.md</li>
+                    <li class="list-group-item bg-dark text-light">✅ Project purpose & features</li>
+                    <li class="list-group-item bg-dark text-light">✅ Installation & usage steps</li>
+                    <li class="list-group-item bg-dark text-light">✅ Clean folder structure</li>
+                    <li class="list-group-item bg-dark text-light">✅ 10–20 incremental commits</li>
+                    <li class="list-group-item bg-dark text-light">✅ Meaningful commit messages</li>
+                    <li class="list-group-item bg-dark text-light">✅ Test files present</li>
+                    <li class="list-group-item bg-dark text-light">✅ Dependency files</li>
+                    <li class="list-group-item bg-dark text-light">✅ GitHub Actions CI/CD</li>
+                    <li class="list-group-item bg-dark text-light">❌ Avoid single huge commit</li>
+                    <li class="list-group-item bg-dark text-light">❌ No ZIP-only uploads</li>
+                    <li class="list-group-item bg-dark text-light">❌ Remove unused code</li>
+                    <li class="list-group-item bg-dark text-light">✅ Consistent naming</li>
+                    <li class="list-group-item bg-dark text-light">🏁 Final polished push</li>
+
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success btn-analyze"
+                        data-bs-dismiss="modal">
+                    Got it 👍
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ================= INFO SECTIONS ================= -->
+<div class="container py-5">
+
+    <!-- ===== WHAT LINKS CAN BE ANALYZED ===== -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-10">
+            <div class="card bg-dark text-light border-secondary p-4">
+                <h4 class="text-info mb-3">🔗 What GitHub Links Can Be Analyzed?</h4>
+                <ul class="list-unstyled fs-6">
+                    <li>✔ Public GitHub repositories only</li>
+                    <li>✔ Personal or academic projects</li>
+                    <li>✔ Internship / portfolio repositories</li>
+                    <li>✔ Multi-folder structured projects</li>
+                    <li>❌ Private repositories (GitHub API restriction)</li>
+                    <li>❌ Empty or forked repositories without commits</li>
+                </ul>
+                <p class="text-secondary small mb-0">
+                    Example: <code>https://github.com/username/project-name</code>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== WHAT REPOLENS ANALYZES ===== -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-10">
+            <div class="card bg-dark text-light border-secondary p-4">
+                <h4 class="text-info mb-3">📊 What Does RepoLens AI Evaluate?</h4>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>README quality & completeness</li>
+                            <li>Project folder structure</li>
+                            <li>Commit history & consistency</li>
+                            <li>Code depth & organization</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Testing presence</li>
+                            <li>CI/CD workflows (GitHub Actions)</li>
+                            <li>Dependency management</li>
+                            <li>Maintainability indicators</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== USE & IMPACT ===== -->
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card bg-dark text-light border-secondary p-4">
+                <h4 class="text-info mb-3">🎯 Why RepoLens AI?</h4>
+
+                <p class="fs-6">
+                    <strong>RepoLens AI acts like a recruiter</strong> — not just an analytics tool.
+                </p>
+
+                <ul class="fs-6">
+                    <li>Gives a clear verdict: <b>Production Ready</b> or <b>Needs Improvement</b></li>
+                    <li>Identifies critical weaknesses instead of raw metrics</li>
+                    <li>Explains exactly <b>what to fix first</b></li>
+                    <li>Helps students prepare before recruiter evaluation</li>
+                </ul>
+
+                <p class="text-secondary fst-italic mt-3 mb-0">
+                    “RepoLens AI doesn’t just evaluate repositories — it teaches students how to build
+                    recruiter-ready GitHub projects before evaluation.”
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
