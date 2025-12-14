@@ -49,3 +49,11 @@ Tests are included using pytest and are automatically run using GitHub Actions.
 ## 🔄 CI/CD
 This project uses GitHub Actions to run automated tests on every push.
 
+## 🏗 Architecture & Code Depth
+
+The project is designed with scalability in mind. Core responsibilities are logically separated:
+- Routing and orchestration in `app.py`
+- Analysis and scoring logic in dedicated helper modules
+- CI/CD and testing handled independently
+
+Future refactoring will further modularize services and utilities.
