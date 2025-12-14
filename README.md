@@ -43,3 +43,9 @@ https://docs.google.com/presentation/d/XXXXXXXX/view
 📥 **Download PPT:**  
 [RepoLens-AI.pptx](docs/RepoLens-AI.pptx)
 
+## 🧪 Testing
+Tests are included using pytest and are automatically run using GitHub Actions.
+
+## 🔄 CI/CD
+This project uses GitHub Actions to run automated tests on every push.
+
